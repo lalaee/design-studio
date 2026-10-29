@@ -8,6 +8,8 @@
 
 # Design Studio
 
+> **Playground:** this copy adds a built-in Claude chat. Run `pnpm dev`, open **Claude** on the rail, enter the Agent chat code printed in the terminal, and ask for changes while the preview updates beside the chat. It uses the `claude` command already signed in on your computer (including Amazon Bedrock), so it needs no API key. See [the Agent module](src/modules/agent/README.md).
+
 An open-source, local prototype sandbox for designers and product managers who build with coding agents. Turn ideas into interactive prototypes, keep the thinking behind them close, and shape an environment that fits your team.
 
 You direct the work in your preferred agent harness. Design Studio gives you a browser preview, reusable design systems, and a place to connect screens, diagrams, canvases, and documents. The code and context live together in a folder you own.

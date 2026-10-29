@@ -7,7 +7,7 @@ import { platformReferences } from './platform-references.js';
 import { setModuleFolders } from '../../core/roots.ts';
 import { markdownPath } from '../../app/docs/referenceLinks.ts';
 import globs, { archivedSystemGlobs, withSystemNegations } from '../build/vite-globs-plugin.js';
-import { ENABLED_MODULES } from './modules.js';
+import { ENABLED_MODULES, MODULE_DIRS } from './modules.js';
 import titleFromHeading from '../build/remark-title-from-heading.js';
 import { frontmatter } from './frontmatter.js';
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
@@ -60,7 +60,11 @@ test('overview discovery uses original owner READMEs and enabled module document
   );
   assert.ok(result);
   const patterns = JSON.parse(result.code.slice('const pages = import.meta.glob('.length, -1));
-  assert.deepEqual(patterns, ['/platform/README.md', ...ENABLED_MODULES.map(m => `/platform/modules/${m.id}/*.md`)]);
+  // A module's documents are found in whichever root holds it (supplied or team).
+  assert.deepEqual(
+    [...patterns].sort(),
+    ['/platform/README.md', ...ENABLED_MODULES.map(m => `/${MODULE_DIRS[m.id].replace(/^src\//, '')}*.md`)].sort(),
+  );
 });
 
 test('contracts render every section and extract only the opening title', () => {

@@ -14,7 +14,8 @@
     "text": true,
     "view": true,
     "onboarding": true,
-    "contributors": true
+    "contributors": true,
+    "agent": true
   },
   "systems": [
     "product",

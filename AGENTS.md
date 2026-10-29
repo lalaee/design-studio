@@ -21,6 +21,7 @@ Use pnpm. Reuse unchanged instructions already read; read source before editing.
 The human Manual lives in `src/platform/modules/documentation/pages/`; technical requirements live in owner READMEs and context documents. Update affected guidance with platform behavior changes. For routing work, consult [TanStack Router](https://tanstack.com/router/latest/docs/framework/react/overview).
 
 <!-- studio:modules -->
+When the person asks to set up, change, or troubleshoot the studio's built-in Claude chat, read [src/modules/agent/skills/use-agent/SKILL.md](src/modules/agent/skills/use-agent/SKILL.md).
 When the person asks for a canvas (a page of views, documents, and notes arranged together), read [src/platform/modules/canvas/skills/use-canvas/SKILL.md](src/platform/modules/canvas/skills/use-canvas/SKILL.md).
 When the person asks to assign or review team Admins, system maintainers, or contributor permissions, read [src/platform/modules/contributors/skills/use-contributors/SKILL.md](src/platform/modules/contributors/skills/use-contributors/SKILL.md).
 When the person asks for a standalone diagram inside a prototype, read [src/platform/modules/diagrams/skills/create-diagram/SKILL.md](src/platform/modules/diagrams/skills/create-diagram/SKILL.md).

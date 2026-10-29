@@ -41,6 +41,14 @@
       "kind": "link",
       "hash": "d1aad30fcc84db9e1643700949a680c823a5b137045961db241dabdc43426e24"
     },
+    ".agents/skills/studio-module-agent-use-agent/SKILL.md": {
+      "kind": "file",
+      "hash": "a4a9450b8c6c7f9cf7f169d60156bea90849bc2e8db6d1f56eac2170c4bbeaeb"
+    },
+    ".claude/skills/studio-module-agent-use-agent": {
+      "kind": "link",
+      "hash": "e9f6185cffd49ba457cee01222c4a10e59302f0ce648feecfa84fb3b3b96915c"
+    },
     ".agents/skills/studio-module-canvas-use-canvas/SKILL.md": {
       "kind": "file",
       "hash": "33c4ab05d86e3fd1d6ba041f65cea0b8d9cfec4fc01a07a93dbbb707e8092079"
